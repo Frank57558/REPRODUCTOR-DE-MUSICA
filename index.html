@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>C R U K I  | Home</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-playing">
+             <div class="cover-container">
+                <img id="cover-image" src="img/caratula/dospuntosce.jpg">
+             </div>
+             <div class="progress-bar" >
+                <input id="progress-bar" value="0" type="range" min="0">
+
+            </div>
+            
+             <div class="data-song-container">
+                 <h1 id="title-song">...</h1> 
+                 <p id="artist-song">...</p>    
+             </div>
+             
+             <div class="controls-container">
+                 <div  class="btn-neon">
+                     <span id="span1"><button id="prev-btn">⫷</button></span>
+                     <span id="span2"><button id="play-btn">▶</button></span>
+                     <span id="span3"><button id="next-btn">⫸</button></span>
+                     CRUKI
+                     
+                     
+                 </div>
+                 
+                 
+                 
+             </div>
+        </div>
+        <div class="volume">
+            <span class="control mdi mdi-volume-high"></span>
+            <input type="range" name="volume" id="volume-control" min="0" max="1" step="0.01">
+        </div>
+        <div class="list-song-container" id="list-song-container">
+                 <div>
+                     <input id="buscar" type="text">
+                     <button>Buscar</button>
+                 </div>
+        </div>
+        
+    </div>
+    <audio id="audio-playing" src="audio/canciones/y2meta.com - BAD BUNNY - AMORFODA (Video Oficial) (128 kbps).mp3"></audio>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

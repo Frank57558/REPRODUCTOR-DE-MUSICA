@@ -1,0 +1,123 @@
+body{
+    border:0px;
+    margin:0px;
+    padding:0px;
+}
+.main-container{
+    width:100%;
+    min-height: 220vh;
+    background:linear-gradient(rgb(5, 4, 4),rgb(224, 123, 123));
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-playing,
+.list-song-container{
+    width:35rem;
+    height: 35rem;
+    background:linear-gradient(rgb(32, 1, 46),orange);
+    border-radius: 10%;
+}
+.main-playing {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+}
+.cover-container{
+    width:20rem;
+    height:20rem;
+    overflow:hidden;
+    border-radius: 50%;
+}
+.data-song-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color:aliceblue;
+}
+.cover-container img {
+width:100%;
+height: 100%;
+object-fit: cover;
+animation-name: girar   ;
+animation-iteration-count: infinite;
+animation-play-state: paused;
+animation-timing-function: linear;
+animation-direction: normal;
+animation-duration: 5s;
+}
+.list-item img{
+    width:6em;
+    height:6rem ;
+}
+.list-item{
+    display:flex;
+    margin-bottom: 1em;
+    color:aliceblue;
+    background:linear-gradient(rgb(226, 118, 76),rgb(39, 43, 97),rgb(9, 9, 71));
+    border-radius: 10%;
+}
+.progress-bar {
+    width:70%;
+}
+.progress-bar input{
+    width: 100%;
+    cursor:pointer;
+    
+}
+    
+.volume{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.volume input{
+    cursor: pointer;
+}
+.controls-container{
+    margin: ;
+    padding: ;
+    display: ;
+    justify-content: ;
+    align-items: ;
+    height: 10vh;
+    background: #969596;
+    font-family: consolas;
+    border-radius: 30%;
+}
+.btn-neon  {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: rgb(41, 3, 112);
+    letter-spacing: 7px;
+    font-size: 30px;
+    text-decoration: none;
+    overflow:hidden;
+    transition:0.2s;
+} 
+
+
+
+
+
+
+
+.btn-neon:hover{
+background:#af9fb1;
+box-shadow: 0 0 10px #271c52,0 0 40px #3c2f52,0 0 80px #353550,0 0 100px #3b3b4e,0 0 150px #4a4a53 ;
+border-radius: 30%;
+transition-delay:0.3s ;
+}
+
+@keyframes girar {
+    from{
+        transform:rotate(0deg);
+
+    }
+    to{
+transform: rotate(360deg);
+    }
+    
+}
